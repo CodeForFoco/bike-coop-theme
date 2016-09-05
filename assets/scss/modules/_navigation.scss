@@ -8,7 +8,16 @@
   @include hide-for(medium);
 }
 
+/* Header wrapper */
+.site-header {
+  background-color: $topbar-background;
+}
+
 /* Mobile menu */
+
+.title-bar {
+  background-color: $topbar-background;
+}
 
 .off-canvas {
  > ul.menu {
@@ -20,12 +29,14 @@
 .title-bar-title {
   a {
     font-size: 1rem;
-    color: #B9B9B9;
+    color: $white;
   }
 }
 
 /* Tablet and desktop menu */
 .top-bar {
+
+  @include grid-row();
 
   .menu .home a {
     font-size: 1rem;
