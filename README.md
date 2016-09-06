@@ -1,4 +1,36 @@
-# Bike Coop [![Build Status](https://travis-ci.org/olefredrik/FoundationPress.svg?branch=master)](https://travis-ci.org/olefredrik/FoundationPress)
+# bike-coop-theme
+
+## About
+
+We are rebuilding the Fort Collins Bike Coop website currently. Our objective is to make it mobile friendly and add in a form to enable users to submit Volunteer Applications and Report Stolen Bikes.
+
+This repository focuses on Theme development, related project repositories can be found here:
+
+- [The central repository for the project is located here.](https://github.com/CodeForFoco/bike-coop)
+- [The code for the project theme is located here.](https://github.com/CodeForFoco/bike-coop-plugin)
+- [The code for the project plugin is located here.](https://github.com/CodeForFoco/bike-coop-theme)
+
+
+## Contributing
+
+We welcome new contributors. Not sure where to start? Check for any [open issues ](https://github.com/CodeForFoco/bike-coop/issues) or ping the team on [our slack channel](https://codeforfoco.slack.com/).
+
+Ensure your code follows best practices and adheres to good style.
+
+Contribution Workflow:
+
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository and clone your fork.
+1. Make any changes, commit and push.
+1. Submit a pull request and your changes will be reviewed and merged.
+
+If you are unfamiliar with git, check the resources below or ping us on Slack and we'll help you out.
+
+### Git
+
+- [Fork A Repo](https://help.github.com/articles/fork-a-repo/)
+- [Github Workflow](https://guides.github.com/introduction/flow/)
+
+# Original Foundation Repo README [![Build Status](https://travis-ci.org/olefredrik/FoundationPress.svg?branch=master)](https://travis-ci.org/olefredrik/FoundationPress)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/olefredrik/foundationpress?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This is a starter-theme for WordPress based on Foundation 6, the most advanced responsive (mobile-first) framework in the world. The purpose of FoundationPress, is to act as a small and handy toolbox that contains the essentials needed to build any design. FoundationPress is meant to be a starting point, not the final product.
