@@ -7,8 +7,8 @@ We are rebuilding the Fort Collins Bike Coop website currently. Our objective is
 This repository focuses on Theme development, related project repositories can be found here:
 
 - [The central repository for the project is located here.](https://github.com/CodeForFoco/bike-coop)
-- [The code for the project theme is located here.](https://github.com/CodeForFoco/bike-coop-plugin)
-- [The code for the project plugin is located here.](https://github.com/CodeForFoco/bike-coop-theme)
+- [The code for the project theme is located here.](https://github.com/CodeForFoco/bike-coop-theme)
+- [The code for the project plugin is located here.](https://github.com/CodeForFoco/bike-coop-plugin)
 
 
 ## Contributing
