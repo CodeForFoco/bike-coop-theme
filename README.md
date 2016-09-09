@@ -13,7 +13,7 @@ This repository focuses on Theme development, related project repositories can b
 
 ## Contributing
 
-We welcome new contributors. Not sure where to start? Check for any [open issues on our trello ][trello] or ping the team on [our slack channel](https://codeforfoco.slack.com/).  The [GitHub issue tracker][githubissue] is not currently used.
+We welcome new contributors. Not sure where to start? Check for any [open issues on our trello ][trello] or ping the team on [our slack channel](https://codeforfoco.slack.com/). The [GitHub issue tracker][githubissue] is not currently used.
 
 Ensure your code follows best practices and adheres to good style.
 
@@ -23,7 +23,7 @@ TL;DR Contribution Workflow:
 
 1. [Fork][fork] this repository and clone your fork.
 1. Make a patch branch.
-1. Make changes, commit and push.
+1. Make changes, commit, and push.
 1. Submit a pull request and your changes will be reviewed and merged.
 
 
