@@ -13,21 +13,21 @@ This repository focuses on Theme development, related project repositories can b
 
 ## Contributing
 
-We welcome new contributors. Not sure where to start? Check for any [open issues ](https://github.com/CodeForFoco/bike-coop/issues) or ping the team on [our slack channel](https://codeforfoco.slack.com/).
+We welcome new contributors. Not sure where to start? Check for any [open issues ][trello] or ping the team on [our slack channel](https://codeforfoco.slack.com/).  The [GitHub issue tracker][githubissue] is not currently used.
 
 Ensure your code follows best practices and adheres to good style.
 
 Contribution Workflow:
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository and clone your fork.
-1. Make any changes, commit and push.
+1. [Fork][fork] this repository and clone your fork.
+1. Make any changes, commit, and push.
 1. Submit a pull request and your changes will be reviewed and merged.
 
 If you are unfamiliar with git, check the resources below or ping us on Slack and we'll help you out.
 
 ### Git
 
-- [Fork A Repo](https://help.github.com/articles/fork-a-repo/)
+- [Fork A Repo][fork]
 - [Github Workflow](https://guides.github.com/introduction/flow/)
 
 # Original Foundation Repo README [![Build Status](https://travis-ci.org/olefredrik/FoundationPress.svg?branch=master)](https://travis-ci.org/olefredrik/FoundationPress)
@@ -204,3 +204,7 @@ Pull requests are highly appreciated. Please follow these guidelines:
 2. Make sure that your code is bug-free and does not introduce new bugs
 3. Create a [pull request](https://help.github.com/articles/creating-a-pull-request)
 4. Verify that all the Travis-CI build checks have passed
+
+[trello]: https://trello.com/b/Zrj0doO2/fort-collins-bike-co-op
+[githubissue]: https://github.com/CodeForFoco/bike-coop/issues
+[fork]: https://help.github.com/articles/fork-a-repo/
