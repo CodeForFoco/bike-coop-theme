@@ -12,9 +12,24 @@
   background-color: $topbar-background;
 }
 
+/* Logo */
+.fcbc-logo {
+  fill: $white;
+  height: 2.5em;
+  width: 2.5em;
+  float: left;
+}
+
 /* Mobile menu */
 .title-bar {
   background-color: $topbar-background;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  float: right;
+  right: 5px;
+  top: 15px;
 }
 
 .off-canvas {
@@ -25,9 +40,14 @@
 }
 
 .title-bar-title {
+  display: block;
   a {
-    font-size: 1rem;
     color: $white;
+    font-size: 1.2rem;
+
+    span {
+      line-height: 2.5em;
+    }
   }
 }
 
