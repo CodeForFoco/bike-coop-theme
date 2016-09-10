@@ -1,4 +1,38 @@
-# Bike Coop [![Build Status](https://travis-ci.org/olefredrik/FoundationPress.svg?branch=master)](https://travis-ci.org/olefredrik/FoundationPress)
+# bike-coop-theme
+
+## About
+
+We are rebuilding the Fort Collins Bike Coop website currently. Our objective is to make it mobile friendly and add in a form to enable users to submit Volunteer Applications and Report Stolen Bikes.
+
+This repository focuses on Theme development, related project repositories can be found here:
+
+- [The central repository for the project is located here.](https://github.com/CodeForFoco/bike-coop)
+- [The code for the project theme is located here.](https://github.com/CodeForFoco/bike-coop-theme)
+- [The code for the project plugin is located here.](https://github.com/CodeForFoco/bike-coop-plugin)
+
+
+## Contributing
+
+We welcome new contributors. Not sure where to start? Check for any [open issues on our trello ][trello] or ping the team on [our slack channel](https://codeforfoco.slack.com/). The [GitHub issue tracker][githubissue] is not currently used.
+
+Ensure your code follows best practices and adheres to good style.
+
+Be sure to read our in depth guide on [contributing][contributing], which includes instructions on how to fork, clone, branch, commit, pull request and sync your fork.
+
+TL;DR Contribution Workflow:
+
+1. [Fork][fork] this repository and clone your fork.
+1. Make a patch branch.
+1. Make changes, commit, and push.
+1. Submit a pull request and your changes will be reviewed and merged.
+
+
+[contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
+[trello]: https://trello.com/b/Zrj0doO2/fort-collins-bike-co-op
+[githubissue]: https://github.com/CodeForFoco/bike-coop/issues
+[fork]: https://help.github.com/articles/fork-a-repo/
+
+# Original Foundation Repo README [![Build Status](https://travis-ci.org/olefredrik/FoundationPress.svg?branch=master)](https://travis-ci.org/olefredrik/FoundationPress)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/olefredrik/foundationpress?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This is a starter-theme for WordPress based on Foundation 6, the most advanced responsive (mobile-first) framework in the world. The purpose of FoundationPress, is to act as a small and handy toolbox that contains the essentials needed to build any design. FoundationPress is meant to be a starting point, not the final product.
@@ -172,3 +206,7 @@ Pull requests are highly appreciated. Please follow these guidelines:
 2. Make sure that your code is bug-free and does not introduce new bugs
 3. Create a [pull request](https://help.github.com/articles/creating-a-pull-request)
 4. Verify that all the Travis-CI build checks have passed
+
+[trello]: https://trello.com/b/Zrj0doO2/fort-collins-bike-co-op
+[githubissue]: https://github.com/CodeForFoco/bike-coop/issues
+[fork]: https://help.github.com/articles/fork-a-repo/
