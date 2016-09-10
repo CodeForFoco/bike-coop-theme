@@ -33,36 +33,46 @@
 
 /* Tablet and desktop menu */
 .top-bar {
+  $ht: 85px;
 
+  @include breakpoint(medium) {
+    height: $ht;
+  }
+
+  height: auto;
   // Set max width
   @include grid-row;
 
+  // Override ul BG
+  ul {
+    background-color: transparent;
+  }
+
   .menu .home a {
-    font-size: 1rem;
+    font-size: 2rem;
     color: $white;
   }
 
   .menu a {
-    height: 45px;
-    line-height: 45px;
+    @include breakpoint(medium) {
+      line-height: $ht;
+    }
+
     color: #e6e6e6;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
+    font-size: 1rem;
+    line-height: 2.5;
+    transition: 300ms;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      background-color: darken($c--header-bg, 7%);
     }
   }
 
-  .menu > li:not(.menu-text) > a {
-    padding: 1rem;
-  }
-
   .menu li:not(:last-child) {
-    border-right: 1px solid #4e4e4e;
+    border-right: 1px solid darken($c--header-bg, 7%);
   }
 
   .dropdown.menu .submenu {

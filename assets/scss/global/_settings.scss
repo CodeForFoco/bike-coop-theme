@@ -380,7 +380,7 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: #121212;
+$menu-item-background-active: darken($c--header-bg,8.5%);
 $menu-icon-spacing: 0.25rem;
 
 // 23. Meter
@@ -557,7 +557,7 @@ $tooltip-radius: $global-radius;
 // 36. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0;
 $topbar-background: $primary-color;
 $topbar-submenu-background: $topbar-background;
 $topbar-link-color: #fff;
