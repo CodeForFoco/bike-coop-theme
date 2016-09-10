@@ -1,5 +1,4 @@
 /* Navigation breakpoints */
-
 .desktop-menu, .top-bar-left {
   @include show-for(medium);
 }
@@ -8,53 +7,93 @@
   @include hide-for(medium);
 }
 
+/* Header wrapper */
+.site-header {
+  background-color: $topbar-background;
+}
+
+/* Logo */
+.fcbc-logo {
+  fill: $white;
+  height: 2.5em;
+  width: 2.5em;
+  float: left;
+}
+
 /* Mobile menu */
+.title-bar {
+  background-color: $topbar-background;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  float: right;
+  right: 5px;
+  top: 15px;
+}
 
 .off-canvas {
- > ul.menu {
+  > ul.menu {
     height: 100vh;
     padding: 1rem;
   }
 }
 
 .title-bar-title {
+  display: block;
   a {
-    font-size: 1rem;
-    color: #B9B9B9;
+    color: $white;
+    font-size: 1.2rem;
+
+    span {
+      line-height: 2.5em;
+    }
   }
 }
 
 /* Tablet and desktop menu */
 .top-bar {
+  $ht: 85px;
 
-  background-color: $c--header-bg;
+  @include breakpoint(medium) {
+    height: $ht;
+  }
 
+  height: auto;
+  // Set max width
+  @include grid-row;
+
+  // Override ul BG
   ul {
-    background-color: $c--header-bg;
+    background-color: transparent;
   }
 
   .menu .home a {
-    font-size: 1rem;
+    font-size: 2rem;
     color: $white;
   }
 
   .menu a {
-    height: 45px;
-    line-height: 45px;
+    @include breakpoint(medium) {
+      line-height: $ht;
+    }
+
     color: #e6e6e6;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
+    font-size: 1rem;
+    line-height: 2.5;
+    transition: 300ms;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      background-color: darken($c--header-bg, 7%);
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu li:not(:last-child) {
+    border-right: 1px solid darken($c--header-bg, 7%);
+  }
 
   .dropdown.menu .submenu {
     background-color: #121212;
@@ -62,56 +101,65 @@
     border: 0;
   }
 
-  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
-  .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
+  .dropdown.menu .has-submenu.is-down-arrow a {
+    padding-right: 1rem;
+  }
 
+  .dropdown.menu .has-submenu.is-down-arrow > a::after {
+    border: 0;
+  }
   .dropdown.menu:first-child >
-    li.is-dropdown-submenu-parent >
-    a::after {
-      display: none;
-    }
-
+  li.is-dropdown-submenu-parent >
+  a::after {
+    display: none;
+  }
 }
+
 /* Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix" https://css-tricks.com/snippets/css/clear-fix/ */
 .post-navigation:before,
 .post-navigation:after {
-	content: "";
-    	display: table;
+  content: "";
+  display: table;
 }
+
 .post-navigation:after {
-	clear:both;
+  clear: both;
 }
+
 /* Text meant only for screen readers. Addresses part of theme-check issue #840. https://github.com/Automattic/_s/blob/master/style.css */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
+
 .nav-previous {
-	float:left;
+  float: left;
 }
+
 .nav-next {
-	float:right;
+  float: right;
 }
