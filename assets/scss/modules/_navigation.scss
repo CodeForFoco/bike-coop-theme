@@ -36,6 +36,7 @@
 /* Tablet and desktop menu */
 .top-bar {
 
+  // Set max width
   @include grid-row();
 
   .menu .home a {
