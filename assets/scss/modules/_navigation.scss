@@ -3,45 +3,42 @@ $header-ht--medium: 4rem;
 $header-ht--small: 3rem;
 
 /* Navigation breakpoints */
-.desktop-menu, .top-bar-left {
-  line-height: $header-ht--medium;
-  display: inline-block;
+.desktop-menu,
+.top-bar-left {
+  @include show-for(medium);
   float: none;
+  line-height: $header-ht--medium;
 
   @include breakpoint(med-large) {
-    line-height: $header-ht--medium;
+    display: inline-block;
     float: left;
   }
-    
+
   @include breakpoint(large) {
     line-height: $header-ht--large;
-
-    .menu a {
-      line-height: $header-ht--large;
-    }
   }
-}
-
-.desktop-menu, .top-bar-left {
-  @include show-for(medium);
 }
 
 /* Site nav */
 .top-bar-right {
+  display: inline-block;
+  float: none;
 
   @include breakpoint(med-large) {
     float: right;
   }
 
-  float: none;
-  display: inline-block;
-
   .menu a {
     line-height: $header-ht--medium;
+
+    @include breakpoint(medium only) {
+      line-height: 3.5rem;
+    }
   }
 }
 
-#mobile-menu, .title-bar {
+#mobile-menu,
+.title-bar {
   @include hide-for(medium);
 }
 
@@ -66,7 +63,6 @@ $header-ht--small: 3rem;
     height: $header-ht--large;
     width: $header-ht--large;
   }
-
 }
 
 /* Mobile menu */
@@ -96,16 +92,15 @@ $header-ht--small: 3rem;
     color: $white;
     font-size: 1.2rem;
     line-height: $header-ht--small;
-    
   }
 }
 
 /* Tablet and desktop menu */
 .top-bar {
-  text-align: center;
-  height: auto;
   // Set max width
   @include grid-row;
+  height: auto;
+  text-align: center;
 
   // Override ul BG
   ul {
@@ -113,33 +108,42 @@ $header-ht--small: 3rem;
   }
 
   // Logo/site title
-  .menu .home a {
-    color: $white;
-    font-size: 1.7rem;
+  .menu .home {
+    @include breakpoint(medium) {
+      display: inline-block;
+    }
 
-    @include breakpoint(large) {
-      font-size: 2.4rem;
-      line-height: $header-ht--large;
+    a {
+      color: $white;
+      font-size: 1.7rem;
+
+      @include breakpoint(medium) {
+        line-height: $header-ht--medium;
+      }
+
+      @include breakpoint(large) {
+        font-size: 2.4rem;
+        line-height: $header-ht--large;
+      }
     }
   }
 
   .menu a {
-    line-height: $header-ht--small;
+    color: #e6e6e6;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: $header-ht--small - .5rem;
+    padding-bottom: 0;
+    padding-top: 0;
+    transition: 300ms;
 
-    @include breakpoint(medium) {
+    @include breakpoint(med-large) {
       line-height: $header-ht--medium;
     }
 
     @include breakpoint(large) {
       line-height: $header-ht--large;
     }
-
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 300ms;
 
     &:hover:not(.button) {
       background-color: darken($c--header-bg, 7%);
