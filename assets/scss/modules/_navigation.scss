@@ -47,21 +47,30 @@ $header-ht--small: 3rem;
   background-color: $topbar-background;
 }
 
-/* Logo */
+/* Logo (needed a ton of selectors to beat Foundation's defaults) */
+.menu > li > a svg.fcbc-logo {
+  margin-right: .55rem;
+}
+
 .fcbc-logo {
+  $gap: .79rem;
   fill: $white;
   float: left;
-  height: $header-ht--small;
-  width: $header-ht--small;
+  height: $header-ht--small - $gap;
+  margin-right: .45rem;
+  position: relative;
+  top: $gap / 2;
+  width: $header-ht--small - $gap;
 
   @include breakpoint(medium) {
-    height: $header-ht--medium;
-    width: $header-ht--medium;
+    height: $header-ht--medium - $gap;
+    width: $header-ht--medium - $gap;
   }
 
   @include breakpoint(large) {
-    height: $header-ht--large;
-    width: $header-ht--large;
+    $gap: .9rem;
+    height: $header-ht--large - $gap;
+    width: $header-ht--large - $gap;
   }
 }
 
@@ -197,12 +206,12 @@ $header-ht--small: 3rem;
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
   clip: auto !important;
   color: #21759b;
   display: block;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: .875rem;
   font-weight: bold;
   height: auto;
   left: 5px;
