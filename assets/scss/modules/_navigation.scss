@@ -1,9 +1,44 @@
+$header-ht--large: 6.5rem;
+$header-ht--medium: 4rem;
+$header-ht--small: 3rem;
+
 /* Navigation breakpoints */
-.desktop-menu, .top-bar-left {
+.desktop-menu,
+.top-bar-left {
   @include show-for(medium);
+  float: none;
+  line-height: $header-ht--medium;
+
+  @include breakpoint(med-large) {
+    display: inline-block;
+    float: left;
+  }
+
+  @include breakpoint(large) {
+    line-height: $header-ht--large;
+  }
 }
 
-#mobile-menu, .title-bar {
+/* Site nav */
+.top-bar-right {
+  display: inline-block;
+  float: none;
+
+  @include breakpoint(med-large) {
+    float: right;
+  }
+
+  .menu a {
+    line-height: $header-ht--medium;
+
+    @include breakpoint(medium only) {
+      line-height: 3.5rem;
+    }
+  }
+}
+
+#mobile-menu,
+.title-bar {
   @include hide-for(medium);
 }
 
@@ -15,14 +50,25 @@
 /* Logo */
 .fcbc-logo {
   fill: $white;
-  height: 2.5em;
-  width: 2.5em;
   float: left;
+  height: $header-ht--small;
+  width: $header-ht--small;
+
+  @include breakpoint(medium) {
+    height: $header-ht--medium;
+    width: $header-ht--medium;
+  }
+
+  @include breakpoint(large) {
+    height: $header-ht--large;
+    width: $header-ht--large;
+  }
 }
 
 /* Mobile menu */
 .title-bar {
   background-color: $topbar-background;
+  padding: 0 10px;
 }
 
 /* Hamburger icon */
@@ -41,50 +87,63 @@
 
 .title-bar-title {
   display: block;
+
   a {
     color: $white;
     font-size: 1.2rem;
-
-    span {
-      line-height: 2.5em;
-    }
+    line-height: $header-ht--small;
   }
 }
 
 /* Tablet and desktop menu */
 .top-bar {
-  $ht: 85px;
-
-  @include breakpoint(medium) {
-    height: $ht;
-  }
-
-  height: auto;
   // Set max width
   @include grid-row;
+  height: auto;
+  text-align: center;
 
   // Override ul BG
   ul {
     background-color: transparent;
   }
 
-  .menu .home a {
-    font-size: 2rem;
-    color: $white;
+  // Logo/site title
+  .menu .home {
+    @include breakpoint(medium) {
+      display: inline-block;
+    }
+
+    a {
+      color: $white;
+      font-size: 1.7rem;
+
+      @include breakpoint(medium) {
+        line-height: $header-ht--medium;
+      }
+
+      @include breakpoint(large) {
+        font-size: 2.4rem;
+        line-height: $header-ht--large;
+      }
+    }
   }
 
   .menu a {
-    @include breakpoint(medium) {
-      line-height: $ht;
+    color: #e6e6e6;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: $header-ht--small - .5rem;
+    padding-bottom: 0;
+    padding-top: 0;
+    transition: 300ms;
+
+    @include breakpoint(med-large) {
+      line-height: $header-ht--medium;
     }
 
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 2.5;
-    transition: 300ms;
+    @include breakpoint(large) {
+      line-height: $header-ht--large;
+    }
 
     &:hover:not(.button) {
       background-color: darken($c--header-bg, 7%);
