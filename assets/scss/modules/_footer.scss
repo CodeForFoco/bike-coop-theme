@@ -18,19 +18,19 @@
 }
 
 .footer {
-  .widget {
-    &__heading {
-      font-size: 1.6rem;
-    }
+  &__heading {
+    font-size: 1.6rem;
+  }
 
+  &__table {
     tbody,
-    tr {
+    tbody tr:nth-child(even) {
       background-color: transparent;
       border: 0;
     }
+  }
 
-    td {
-      padding: 0;
-    }
+  td {
+    padding: 0;
   }
 }
