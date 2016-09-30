@@ -17,7 +17,7 @@
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<article class="column medium-4">
 					<h3 class="footer__heading">Hours of Operation</h3>
-					<b>PUBLIC, OPEN-SHOP HOURS</b>
+					<h4 class="footer__sub-heading">Public, Open-shop Hours</h4>
 					<table class="footer__table">
 					    <tbody>
 					        <tr>
@@ -50,7 +50,7 @@
 					        </tr>
 					    </tbody>
 					</table>
-					<b>VOLUNTEER WORK NIGHTS</b>
+					<h4 class="footer__sub-heading">Volunteer Work Nights</h4>
 					<table class="footer__table">
 					    <tbody>
 					        <tr>

@@ -22,6 +22,11 @@
     font-size: 1.6rem;
   }
 
+  &__sub-heading {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
   &__table {
     tbody,
     tbody tr:nth-child(even) {
