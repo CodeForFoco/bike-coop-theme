@@ -14,7 +14,7 @@ function foundationpress_sidebar_widgets() {
 	  'description' => __( 'Drag widgets to this sidebar container.', 'foundationpress' ),
 	  'before_widget' => '<article id="%1$s" class="widget %2$s">',
 	  'after_widget' => '</article>',
-	  'before_title' => '<h6>',
+	  'before_title' => '<h6 class="widget__heading">',
 	  'after_title' => '</h6>',
 	));
 
@@ -22,9 +22,9 @@ function foundationpress_sidebar_widgets() {
 	  'id' => 'footer-widgets',
 	  'name' => __( 'Footer widgets', 'foundationpress' ),
 	  'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),
-	  'before_widget' => '<article id="%1$s" class="large-4 columns widget %2$s">',
+	  'before_widget' => '<article id="%1$s" class="medium-4 columns widget %2$s widget--footer">',
 	  'after_widget' => '</article>',
-	  'before_title' => '<h6>',
+	  'before_title' => '<h6 class="widget__heading">',
 	  'after_title' => '</h6>',
 	));
 }
