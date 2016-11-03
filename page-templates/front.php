@@ -21,7 +21,6 @@ get_header(); ?>
 			</section>
 		</div>
 	</div>
-
 </header>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
