@@ -6,7 +6,7 @@
 	}
 
 	@include breakpoint(small) {
-		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
+		background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
 		background-position: bottom;
 		padding: rem-calc(65%) 0;
@@ -17,7 +17,7 @@
 	}
 
 	@include breakpoint(medium) {
-		background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
+		background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
 		background-position: center;
 		height: rem-calc(685);
