@@ -52,7 +52,7 @@ get_header(); ?>
 	<hr />
 </div>
 
-
+<!--
 <section class="benefits">
 	<header>
 		<h2>Build Foundation based sites, powered by WordPress</h2>
@@ -89,7 +89,7 @@ get_header(); ?>
 		<a href="/kitchen-sink">See what's in Foundation out of the box →</a>
 	</div>
 
-</section>
+</section>-->
 
 
 
