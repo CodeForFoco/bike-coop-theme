@@ -28,7 +28,7 @@ TL;DR Contribution Workflow:
 
 
 [contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
-[githubissue]: https://github.com/CodeForFoco/bike-coop/issues
+[githubissue]: https://github.com/CodeForFoco/bike-coop-theme/issues
 [fork]: https://help.github.com/articles/fork-a-repo/
 
 # Original Foundation Repo README [![Build Status](https://travis-ci.org/olefredrik/FoundationPress.svg?branch=master)](https://travis-ci.org/olefredrik/FoundationPress)
