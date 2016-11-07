@@ -13,7 +13,7 @@ This repository focuses on Theme development, related project repositories can b
 
 ## Contributing
 
-We welcome new contributors. Not sure where to start? Check for any [open issues on our trello ][trello] or ping the team on [our slack channel](https://codeforfoco.slack.com/). The [GitHub issue tracker][githubissue] is not currently used.
+We welcome new contributors. Not sure where to start? Check for any [open issues][githubissue] or ping the team on [our slack channel](https://codeforfoco.slack.com/). 
 
 Ensure your code follows best practices and adheres to good style.
 
@@ -28,7 +28,6 @@ TL;DR Contribution Workflow:
 
 
 [contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
-[trello]: https://trello.com/b/Zrj0doO2/fort-collins-bike-co-op
 [githubissue]: https://github.com/CodeForFoco/bike-coop/issues
 [fork]: https://help.github.com/articles/fork-a-repo/
 
