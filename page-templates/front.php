@@ -23,7 +23,19 @@ get_header(); ?>
       <?php do_action('foundationpress_page_before_entry_content'); ?>
       <div class="entry-content">
         <?php the_content(); ?>
+        <div class="row wheel-backgrounds">
+          <div class="column medium-4 wheel-bg--bike-shop">
+            <?php echo file_get_contents(get_stylesheet_directory().'/assets/images/icons/wheel-icon.svg'); ?>
+          </div>
+          <div class="column medium-4 wheel-bg--programs">
+            <?php echo file_get_contents(get_stylesheet_directory().'/assets/images/icons/wheel-icon.svg'); ?>
+          </div>
+          <div class="column medium-4 wheel-bg--volunteer">
+            <?php echo file_get_contents(get_stylesheet_directory().'/assets/images/icons/wheel-icon.svg'); ?>
+          </div>
+        </div>
       </div>
+
       <footer>
         <?php wp_link_pages(array('before' => '<nav id="page-nav"><p>'.__('Pages:', 'foundationpress'), 'after' => '</p></nav>')); ?>
         <p><?php the_tags(); ?></p>

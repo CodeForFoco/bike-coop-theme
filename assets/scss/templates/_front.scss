@@ -1,10 +1,10 @@
 // Page header
+
 #front-hero {
 	.marketing {
 		@include grid-row();
 		max-width: 55rem;
 	}
-
 	@include breakpoint(small) {
 		background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
@@ -15,7 +15,6 @@
 		position: relative;
 		text-align: left;
 	}
-
 	@include breakpoint(medium) {
 		background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
@@ -25,14 +24,12 @@
 	}
 
 	#watch {
-
 		@include breakpoint(small) {
-			@include grid-column(7);
+			 @include grid-column(7);
 			@include grid-column-position(-5);
 		}
-
 		@include breakpoint(medium) {
-			@include grid-column(12);
+			 @include grid-column(12);
 			@include grid-column-position(0);
 		}
 
@@ -74,34 +71,27 @@
 				margin-right: rem-calc(8);
 			}
 		}
-
 	}
 
 	.tagline {
-
 		@include breakpoint(small) {
-			@include grid-column(8);
+			 @include grid-column(8);
 		}
-
 		@include breakpoint(medium) {
-			@include grid-column(5);
+			 @include grid-column(5);
 			padding-top: 6rem;
 		}
-
 	}
 
 	h1 {
 		color: #fff;
 		font-weight: 500;
-
 		@include breakpoint(small) {
 			font-size: 2.2rem;
 		}
-
 		@include breakpoint(medium) {
 			font-size: 2.875rem;
 		}
-
 	}
 
 	h4 {
@@ -110,8 +100,9 @@
 		font-size: 1.3125rem;
 	}
 
-	.download { margin-top: rem-calc(20); }
-
+	.download {
+		margin-top: rem-calc(20);
+	}
 }
 
 // Intro
@@ -119,13 +110,11 @@
 	@include grid-row();
 
 	.fp-intro {
-
 		@include breakpoint(small) {
-			@include grid-column(12);
+			 @include grid-column(12);
 		}
-
 		@include breakpoint(medium) {
-			@include grid-column(10);
+			 @include grid-column(10);
 			@include grid-column-offset(1);
 
 			h2 {
@@ -139,7 +128,6 @@
 				color: #777;
 				margin-bottom: 2rem;
 			}
-
 		}
 	}
 }
@@ -154,7 +142,6 @@
 		box-sizing: border-box;
 	}
 }
-
 
 // Benefits
 .benefits {
@@ -175,21 +162,20 @@
 		}
 	}
 
-	.semantic,
-	.responsive,
 	.customizable,
-	.professional {
+	.professional,
+	.responsive,
+	.semantic {
 		@include breakpoint(small) {
-			@include grid-column(12);
+			 @include grid-column(12);
 		}
-
 		@include breakpoint(medium) {
-			@include grid-column(3);
+			 @include grid-column(3);
 		}
 
 		img {
 			padding: 1.25rem;
-    	margin: 1rem auto 0 auto;
+			margin: 1rem auto 0;
 		}
 
 		h3 {
@@ -198,8 +184,9 @@
 			font-size: 1.75rem;
 		}
 
-		p { font-size: 0.9375rem; }
-
+		p {
+			font-size: 0.9375rem;
+		}
 	}
 
 	.why-foundation {
@@ -207,5 +194,78 @@
 		@include grid-column(12);
 		margin-top: 4rem;
 	}
+}
 
+// Wheel links
+.wheel-backgrounds {
+	text {
+		font-size: 40px;
+		letter-spacing: 0;
+		text-anchor: middle;
+		line-height: 125%;
+		word-spacing: 0;
+		font-family: Stencil;
+		fill: #000000;
+	}
+}
+
+.wheel-bg {
+	position: relative;
+
+	&--bike-shop {
+		circle {
+			fill: gray;
+		}
+		#wheel-programs,
+		#wheel-volunteer {
+			display: none;
+		}
+	}
+
+	&--volunteer {
+		circle {
+			fill: purple;
+		}
+
+		#wheel-bike-shop,
+		#wheel-programs {
+			display: none;
+		}
+	}
+
+	&--programs {
+		circle {
+			fill: yellow;
+		}
+
+		#wheel-bike-shop,
+		#wheel-volunteer {
+			display: none;
+		}
+	}
+
+}
+@function lettering( $i, $angle-offset, $angle-per-char ) {
+	 @return rotate( $angle-offset + $angle-per-char * $i);
+}
+@mixin curved-letters($angle-span:55deg, $angle-offset: -2.5deg, $num-letters:9) {
+	 @for $i from 1 through $num-letters{
+		$angle-per-char: $angle-span / $num-letters;
+
+		.char#{ $i } {
+			transform: lettering( $i, $angle-offset, $angle-per-char );
+		}
+	}
+}
+
+.wheel-bg--bike-shop {
+	@include curved-letters();
+}
+
+.wheel-bg--programs {
+	@include curved-letters(70deg, -30deg, 8);
+}
+
+.wheel-background {
+	fill: green;
 }
