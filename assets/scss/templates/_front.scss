@@ -214,7 +214,7 @@
 
 	&--bike-shop {
 		circle {
-			fill: gray;
+			fill: $wheel-bg--bike-shop;
 		}
 		#wheel-programs,
 		#wheel-volunteer {
@@ -224,7 +224,7 @@
 
 	&--volunteer {
 		circle {
-			fill: purple;
+			fill: $wheel-bg--volunteer;
 		}
 
 		#wheel-bike-shop,
@@ -235,7 +235,7 @@
 
 	&--programs {
 		circle {
-			fill: yellow;
+			fill: $wheel-bg--programs;
 		}
 
 		#wheel-bike-shop,
@@ -245,9 +245,11 @@
 	}
 
 }
+
 @function lettering( $i, $angle-offset, $angle-per-char ) {
 	 @return rotate( $angle-offset + $angle-per-char * $i);
 }
+
 @mixin curved-letters($angle-span:55deg, $angle-offset: -2.5deg, $num-letters:9) {
 	 @for $i from 1 through $num-letters{
 		$angle-per-char: $angle-span / $num-letters;
