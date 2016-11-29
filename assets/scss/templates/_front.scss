@@ -199,13 +199,14 @@
 // Wheel links
 .wheel-backgrounds {
 	text {
+		fill: $white;
+		text-shadow: 0 2px $black;
 		font-size: 40px;
 		letter-spacing: 0;
 		text-anchor: middle;
 		line-height: 125%;
 		word-spacing: 0;
 		font-family: Stencil;
-		fill: #000000;
 	}
 }
 
