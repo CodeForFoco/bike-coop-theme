@@ -143,69 +143,14 @@
 	}
 }
 
-// Benefits
-.benefits {
-	@include grid-row();
-	text-align: center;
-
-	header {
-		@include grid-column(12);
-
-		h2 {
-			font-weight: 300;
-		}
-
-		h4 {
-			font-size: 1.125rem;
-			line-height: 1.6;
-			color: #777;
-		}
-	}
-
-	.customizable,
-	.professional,
-	.responsive,
-	.semantic {
-		@include breakpoint(small) {
-			 @include grid-column(12);
-		}
-		@include breakpoint(medium) {
-			 @include grid-column(3);
-		}
-
-		img {
-			padding: 1.25rem;
-			margin: 1rem auto 0;
-		}
-
-		h3 {
-			color: #0a0a0a;
-			font-weight: 300;
-			font-size: 1.75rem;
-		}
-
-		p {
-			font-size: 0.9375rem;
-		}
-	}
-
-	.why-foundation {
-		@include grid-row();
-		@include grid-column(12);
-		margin-top: 4rem;
-	}
-}
-
 // Wheel links
 .wheel-backgrounds {
 	text {
 		fill: $white;
 		text-shadow: 0 2px $black;
 		font-size: 40px;
-		letter-spacing: 0;
 		text-anchor: middle;
 		line-height: 125%;
-		word-spacing: 0;
 		font-family: Stencil;
 	}
 }
@@ -245,30 +190,4 @@
 		}
 	}
 
-}
-
-@function lettering( $i, $angle-offset, $angle-per-char ) {
-	 @return rotate( $angle-offset + $angle-per-char * $i);
-}
-
-@mixin curved-letters($angle-span:55deg, $angle-offset: -2.5deg, $num-letters:9) {
-	 @for $i from 1 through $num-letters{
-		$angle-per-char: $angle-span / $num-letters;
-
-		.char#{ $i } {
-			transform: lettering( $i, $angle-offset, $angle-per-char );
-		}
-	}
-}
-
-.wheel-bg--bike-shop {
-	@include curved-letters();
-}
-
-.wheel-bg--programs {
-	@include curved-letters(70deg, -30deg, 8);
-}
-
-.wheel-background {
-	fill: green;
 }
