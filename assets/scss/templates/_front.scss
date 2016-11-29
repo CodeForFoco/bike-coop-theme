@@ -162,6 +162,7 @@
 		circle {
 			fill: $wheel-bg--bike-shop;
 		}
+
 		#wheel-programs,
 		#wheel-volunteer {
 			display: none;
@@ -190,4 +191,43 @@
 		}
 	}
 
+}
+
+// Program Links
+.program-link-bg {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	font-family: Stencil;
+	font-size: 1.8rem;
+	padding: 0 8px;
+
+	> a {
+		display: block;
+		position: relative;
+
+		&:hover .home-program-link__text {
+			background-color: lighten($flat-black, 20%);
+		}
+	}
+
+	img {
+		border-radius: 4px;
+		width: 100%;
+	}
+
+	.home-program-link__text {
+		transition: 300ms;
+		text-shadow: 0 2px $flat-black;
+		background-color: #231f1f;
+		width: 100%;
+		padding: 8px 4px;
+		position: absolute;
+		line-height: 1;
+		display: block;
+		color: hsl(0, 0%, 100%);
+		bottom: 1rem;
+		text-align: center;
+	}
 }
