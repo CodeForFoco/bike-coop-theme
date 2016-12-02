@@ -40,6 +40,29 @@ get_header(); ?>
             </a>
           </div>
         </div>
+        <div class="row">
+          <h2>Program Links</h2>
+          <div class="column medium-4 program-link-bg bg--earn-bike" title="Earn a bike by volunteering">
+            <a href="programs/earn-a-bike">
+              <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/coop/earn-a-bike.jpg'; ?>" alt="Earn a Bike">
+              <span class="home-program-link__text">Earn a Bike</span>
+            </a>
+          </div>
+          <div class="column medium-4 program-link-bg bg--fix-bike" title="Get help fixing your bike">
+            <a href="programs/fix-your-bike">
+              <img src="<?php echo get_stylesheet_directory_uri() .
+                '/assets/images/coop/fix-your-bike.jpg'; ?>" alt="Fix Your Bike">
+              <span class="home-program-link__text">Fix Your Bike</span>
+            </a>
+          </div>
+              <div class="column medium-4 program-link-bg bg--report-abandoned" title="Report an abandoned bike">
+            <a href="programs/report-abandoned-bikes">
+              <img src="<?php echo get_stylesheet_directory_uri() .
+                '/assets/images/coop/abandoned-bike.jpg'; ?>" alt="Abandoned Bikes">
+              <span class="home-program-link__text">Abandoned Bikes</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <footer>
