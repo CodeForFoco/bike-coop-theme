@@ -1,10 +1,10 @@
 // Page header
+
 #front-hero {
 	.marketing {
 		@include grid-row();
 		max-width: 55rem;
 	}
-
 	@include breakpoint(small) {
 		background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
@@ -15,7 +15,6 @@
 		position: relative;
 		text-align: left;
 	}
-
 	@include breakpoint(medium) {
 		background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
@@ -25,14 +24,12 @@
 	}
 
 	#watch {
-
 		@include breakpoint(small) {
-			@include grid-column(7);
+			 @include grid-column(7);
 			@include grid-column-position(-5);
 		}
-
 		@include breakpoint(medium) {
-			@include grid-column(12);
+			 @include grid-column(12);
 			@include grid-column-position(0);
 		}
 
@@ -74,34 +71,27 @@
 				margin-right: rem-calc(8);
 			}
 		}
-
 	}
 
 	.tagline {
-
 		@include breakpoint(small) {
-			@include grid-column(8);
+			 @include grid-column(8);
 		}
-
 		@include breakpoint(medium) {
-			@include grid-column(5);
+			 @include grid-column(5);
 			padding-top: 6rem;
 		}
-
 	}
 
 	h1 {
 		color: #fff;
 		font-weight: 500;
-
 		@include breakpoint(small) {
 			font-size: 2.2rem;
 		}
-
 		@include breakpoint(medium) {
 			font-size: 2.875rem;
 		}
-
 	}
 
 	h4 {
@@ -110,8 +100,9 @@
 		font-size: 1.3125rem;
 	}
 
-	.download { margin-top: rem-calc(20); }
-
+	.download {
+		margin-top: rem-calc(20);
+	}
 }
 
 // Intro
@@ -119,13 +110,11 @@
 	@include grid-row();
 
 	.fp-intro {
-
 		@include breakpoint(small) {
-			@include grid-column(12);
+			 @include grid-column(12);
 		}
-
 		@include breakpoint(medium) {
-			@include grid-column(10);
+			 @include grid-column(10);
 			@include grid-column-offset(1);
 
 			h2 {
@@ -139,7 +128,6 @@
 				color: #777;
 				margin-bottom: 2rem;
 			}
-
 		}
 	}
 }
@@ -155,57 +143,51 @@
 	}
 }
 
+// Wheel links
+.wheel-backgrounds {
+	text {
+		fill: $white;
+		text-shadow: 0 2px $black;
+		font-size: 40px;
+		text-anchor: middle;
+		line-height: 125%;
+		font-family: Stencil;
+	}
+}
 
-// Benefits
-.benefits {
-	@include grid-row();
-	text-align: center;
+.wheel-bg {
+	position: relative;
 
-	header {
-		@include grid-column(12);
-
-		h2 {
-			font-weight: 300;
+	&--bike-shop {
+		circle {
+			fill: $wheel-bg--bike-shop;
 		}
-
-		h4 {
-			font-size: 1.125rem;
-			line-height: 1.6;
-			color: #777;
+		#wheel-programs,
+		#wheel-volunteer {
+			display: none;
 		}
 	}
 
-	.semantic,
-	.responsive,
-	.customizable,
-	.professional {
-		@include breakpoint(small) {
-			@include grid-column(12);
+	&--volunteer {
+		circle {
+			fill: $wheel-bg--volunteer;
 		}
 
-		@include breakpoint(medium) {
-			@include grid-column(3);
+		#wheel-bike-shop,
+		#wheel-programs {
+			display: none;
 		}
-
-		img {
-			padding: 1.25rem;
-    	margin: 1rem auto 0 auto;
-		}
-
-		h3 {
-			color: #0a0a0a;
-			font-weight: 300;
-			font-size: 1.75rem;
-		}
-
-		p { font-size: 0.9375rem; }
-
 	}
 
-	.why-foundation {
-		@include grid-row();
-		@include grid-column(12);
-		margin-top: 4rem;
+	&--programs {
+		circle {
+			fill: $wheel-bg--programs;
+		}
+
+		#wheel-bike-shop,
+		#wheel-volunteer {
+			display: none;
+		}
 	}
 
 }
