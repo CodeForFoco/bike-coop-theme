@@ -128,9 +128,12 @@ $header-ht--small: 3rem;
 
       @include breakpoint(medium) {
         line-height: $header-ht--medium;
+        padding-right: 0;
+        padding-left: 5px;
       }
 
       @include breakpoint(large) {
+        padding-left: 0;
         font-size: 2.4rem;
         line-height: $header-ht--large;
       }
