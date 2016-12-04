@@ -13,7 +13,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	function foundationpress_scripts() {
 
 	// Enqueue Google Font
-	wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Nunito' );
+	wp_enqueue_style( 'google-font-catamaran', 'https://fonts.googleapis.com/css?family=Catamaran' );
 
 	// Enqueue the main Stylesheet.
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/assets/stylesheets/foundation.css', array(), '2.6.1', 'all' );
