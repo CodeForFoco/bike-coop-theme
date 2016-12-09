@@ -1,5 +1,5 @@
-$header-ht--large: 6.5rem;
-$header-ht--medium: 4rem;
+$header-ht--large: 4.7rem;
+$header-ht--medium: 3.5rem;
 $header-ht--small: 3rem;
 
 /* Navigation breakpoints */
@@ -8,12 +8,10 @@ $header-ht--small: 3rem;
   @include show-for(medium);
   float: none;
   line-height: $header-ht--medium;
-
   @include breakpoint(med-large) {
     display: inline-block;
     float: left;
   }
-
   @include breakpoint(large) {
     line-height: $header-ht--large;
   }
@@ -23,14 +21,12 @@ $header-ht--small: 3rem;
 .top-bar-right {
   display: inline-block;
   float: none;
-
   @include breakpoint(med-large) {
     float: right;
   }
 
   .menu a {
     line-height: $header-ht--medium;
-
     @include breakpoint(medium only) {
       line-height: 3.5rem;
     }
@@ -53,20 +49,18 @@ $header-ht--small: 3rem;
 }
 
 .fcbc-logo {
-  $gap: .79rem;
+  $gap: .89rem;
   fill: $white;
   float: left;
   height: $header-ht--small - $gap;
-  margin-right: .45rem;
+  margin-right: .35rem;
   position: relative;
   top: $gap / 2;
   width: $header-ht--small - $gap;
-
   @include breakpoint(medium) {
     height: $header-ht--medium - $gap;
     width: $header-ht--medium - $gap;
   }
-
   @include breakpoint(large) {
     $gap: .9rem;
     height: $header-ht--large - $gap;
@@ -77,14 +71,23 @@ $header-ht--small: 3rem;
 /* Mobile menu */
 .title-bar {
   background-color: $topbar-background;
-  padding: 0 10px;
+  padding: 0 5px;
+  @include breakpoint(medium) {
+    padding: 0 10px;
+  }
 }
 
 /* Hamburger icon */
 .menu-icon {
-  float: right;
-  right: 5px;
-  top: 15px;
+  height: 21px;
+
+  &:after {
+    right: 0;
+    top: .1em;
+    height: .1em;
+    background: $white;
+    box-shadow: 0 .4em 0 0 $white, 0 .75em 0 0 $white;
+  }
 }
 
 .off-canvas {
@@ -95,11 +98,13 @@ $header-ht--small: 3rem;
 }
 
 .title-bar-title {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   a {
     color: $white;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: $header-ht--small;
   }
 }
@@ -123,36 +128,29 @@ $header-ht--small: 3rem;
     }
 
     a {
-      color: $white;
       font-size: 1.7rem;
-
       @include breakpoint(medium) {
         line-height: $header-ht--medium;
-        padding-right: 0;
+        padding-right: 5px;
         padding-left: 5px;
       }
-
       @include breakpoint(large) {
-        padding-left: 0;
-        font-size: 2.4rem;
+        font-size: 2rem;
         line-height: $header-ht--large;
       }
     }
   }
 
   .menu a {
-    color: #e6e6e6;
+    color: $white;
     font-size: 1rem;
     font-weight: bold;
     line-height: $header-ht--small - .5rem;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding: 0 .5rem;
     transition: 300ms;
-
     @include breakpoint(med-large) {
       line-height: $header-ht--medium;
     }
-
     @include breakpoint(large) {
       line-height: $header-ht--large;
     }
@@ -179,17 +177,16 @@ $header-ht--small: 3rem;
   .dropdown.menu .has-submenu.is-down-arrow > a::after {
     border: 0;
   }
-  .dropdown.menu:first-child >
-  li.is-dropdown-submenu-parent >
-  a::after {
+
+  .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after {
     display: none;
   }
 }
 
 /* Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix" https://css-tricks.com/snippets/css/clear-fix/ */
-.post-navigation:before,
-.post-navigation:after {
-  content: "";
+.post-navigation:after,
+.post-navigation:before {
+  content: '';
   display: table;
 }
 
