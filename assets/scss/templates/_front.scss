@@ -22,7 +22,7 @@
 		text-align: left;
 	}
 	@include breakpoint(medium) {
-		background: url('../images/coop/cropped_header.jpg') bottom center;
+		//background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
 		background-position: center;
 		//height: rem-calc(685);

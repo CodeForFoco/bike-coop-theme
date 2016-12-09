@@ -6969,7 +6969,6 @@ body#tinymce {
       clear: both; }
   @media screen and (min-width: 40em) {
     #front-hero {
-      background: url("../images/coop/cropped_header.jpg") bottom center;
       -webkit-background-size: cover;
               background-size: cover;
       background-position: center;
