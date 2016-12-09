@@ -5,13 +5,14 @@ Template Name: Front
 get_header(); ?>
 
 <header id="front-hero" role="banner">
-  <div class="marketing">
+  <?php echo do_shortcode('[fcbc_slider location="home"]'); ?>
+  <!--<div class="marketing">
     <div class="tagline">
-      <h1><?php bloginfo('name'); ?></h1>
-      <h4 class="subheader"><?php bloginfo('description'); ?></h4>
+      <h1><?php //bloginfo('name'); ?></h1>
+      <h4 class="subheader"><?php //bloginfo('description'); ?></h4>
       <a role="button" class="download large button sites-button hide-for-small-only" href="http://198.58.102.79/">Learn More</a>
     </div>
-  </div>
+  </div>-->
 </header>
 
 <?php do_action('foundationpress_before_content'); ?>

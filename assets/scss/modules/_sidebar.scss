@@ -7,4 +7,21 @@
     @include grid-column(4);
     margin-top: 1rem;
   }
+  
+  .widget{
+        &.widget_recent_entries{
+            ul{
+                margin: 0; padding: 0;
+                
+                li{
+                    display: block; list-style: none;
+                    
+                    a{
+                        padding: 15px 0; border-bottom: solid 1px $primary-color;
+                    }
+                }
+            }
+            
+        }
+  }
 }
