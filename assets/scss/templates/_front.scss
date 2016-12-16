@@ -1,12 +1,18 @@
-// Page header
+//Home Page
+.home{
+	header{
+		padding: 0 !important;
+	}
+}
 
+// Page header
 #front-hero {
 	.marketing {
 		@include grid-row();
 		max-width: 55rem;
 	}
 	@include breakpoint(small) {
-		background: url('../images/coop/cropped_header.jpg') bottom center;
+		//background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
 		background-position: bottom;
 		padding: rem-calc(65%) 0;
@@ -16,10 +22,10 @@
 		text-align: left;
 	}
 	@include breakpoint(medium) {
-		background: url('../images/coop/cropped_header.jpg') bottom center;
+		//background: url('../images/coop/cropped_header.jpg') bottom center;
 		background-size: cover;
 		background-position: center;
-		height: rem-calc(685);
+		//height: rem-calc(685);
 		margin: 0 0 rem-calc(72);
 	}
 

@@ -6895,6 +6895,15 @@ table.hover tr:nth-of-type(even):hover {
   @media screen and (min-width: 40em) {
       .sidebar:last-child:not(:first-child) {
         float: right; } }
+  .sidebar .widget.widget_recent_entries ul {
+    margin: 0;
+    padding: 0; }
+    .sidebar .widget.widget_recent_entries ul li {
+      display: block;
+      list-style: none; }
+      .sidebar .widget.widget_recent_entries ul li a {
+        padding: 15px 0;
+        border-bottom: solid 1px #00758a; }
 
 body#tinymce {
   height: auto;
@@ -6937,8 +6946,10 @@ body#tinymce {
 [data-whatinput="mouse"] a:focus, button:focus [data-whatinput="touch"] a:focus, button:focus {
   outline: none; }
 
+.home header {
+  padding: 0 !important; }
+
 #front-hero {
-  background: url("../images/coop/cropped_header.jpg") bottom center;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: bottom;
@@ -6959,11 +6970,9 @@ body#tinymce {
       clear: both; }
   @media screen and (min-width: 40em) {
     #front-hero {
-      background: url("../images/coop/cropped_header.jpg") bottom center;
       -webkit-background-size: cover;
               background-size: cover;
       background-position: center;
-      height: 36.28178rem;
       margin: 0 0 3.81356rem; } }
   #front-hero #watch {
     width: 58.33333%;
@@ -7446,5 +7455,8 @@ body#tinymce {
   #paypal-donations-wrapper h4, #paypal-donations-wrapper h3 {
     margin-bottom: 0;
     font-size: 1.5em; }
+
+.blog .main-content .post {
+  margin-bottom: 45px; }
 
 /*# sourceMappingURL=foundation.css.map */

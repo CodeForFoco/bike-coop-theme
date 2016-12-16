@@ -1,32 +1,29 @@
-# Motion UI Documentation
+# Motion UI
 
-### [Installation](installation.md)
+A Sass library for creating CSS transitions and animations from your friends at [ZURB](http://zurb.com). Originally integrated into [Foundation for Apps](http://foundation.zurb.com/apps), the code is now a standalone library, soon to be used by [Foundation for Sites](http://foundation.zurb.com/sites) and Foundation for Apps.
 
-Installing Motion UI.
+## Installation
 
-### [Transitions](transitions.md)
+- On npm: `npm install motion-ui`
+- On Bower: `bower install motion-ui`
 
-Using CSS transitions to show and hide components.
+## Demos
 
-### [Animations](animations.md)
+[View live demos on the ZURB Playground.](http://zurb.com/playground/motion-ui)
 
-Using CSS animations to add effects.
+## Documentation
 
-### [CSS Classes](classes.md)
+[View the documentation here.](docs)
 
-Using the library's pre-made CSS classes.
+## Develop Locally
 
-### [JavaScript](javascript.md)
+```
+git clone https://github.com/zurb/motion-ui
+cd motion-ui
+npm install
+```
 
-Using the JavaScript plugin to transition elements in and out.
-
-### [Configuration](configuration.md)
-
-Customizing Motion UI.
-
-### [WOW.js](wow.md)
-
-Using Motion UI with WOW.js.
-
-
-
+- Run `npm start` to compile test Sass/JS files, and to build the documentation.
+  - **To make changes to the documentation, edit the files under `docs/src`.
+- Run `npm test` to run the unit tests.
+- Run `npm start dist` to compile distribution files.

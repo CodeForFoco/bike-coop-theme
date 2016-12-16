@@ -26,9 +26,10 @@ get_header(); ?>
 
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 		<?php endif; // End have_posts() check. ?>
-
+		
+		<hr />
+		
 		<?php /* Display navigation to next/previous pages when applicable */ ?>
 		<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
 			<nav id="post-nav">
@@ -36,8 +37,8 @@ get_header(); ?>
 				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
 			</nav>
 		<?php } ?>
-
 	</article>
+	
 	<?php get_sidebar(); ?>
 
 </div>
