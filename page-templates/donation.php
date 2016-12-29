@@ -4,8 +4,8 @@ Template Name: Donate
 */
 get_header(); ?>
 <header id="front-hero" role="banner">
-	<div class="marketing">
-		<div class="tagline">
+	<div class="tagline">
+		<div class="row">
 			<h1>Donations!</h1>
 			<h4 class="subheader">All donations are welcome</h4>
 			<a role="button" class="download large button sites-button same-page-link" href="#paypal-donations-wrapper">
@@ -13,15 +13,6 @@ get_header(); ?>
 				<span>Make a donation</span>
 			</a>
 		</div>
-
-		<!--<div id="watch">
-			<section id="stargazers">
-				<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
-			</section>
-			<section id="twitter">
-				<a href="https://twitter.com/olefredrik">@olefredrik</a>
-			</section>
-		</div>-->
 	</div>
 </header>
 <?php do_action( 'foundationpress_before_content' ); ?>
@@ -47,12 +38,12 @@ get_header(); ?>
 						<!--<input type="image" src="http://fcbikecoop.org/images/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
 						<button type="submit" role="button" class="download button sites-button" title="PayPal - The safer, easier way to pay online!">
 							<i class="fa fa-paypal" aria-hidden="true"></i>
-							Donate 
+							Donate
 						</button>
 						<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
 					</form>
 					<br />
-					
+
 					<h4 class='title'>Donate to our outreach</h4>
 					<p>$90 pays for one bike mechanic for a day to support our earn-a-bike and youth outreach programs</p>
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -60,7 +51,7 @@ get_header(); ?>
 					 	<input type="hidden" name="hosted_button_id" value="1190629">
 					 	<button type="submit" role="button" class="download button sites-button" title="PayPal - The safer, easier way to pay online!">
 							<i class="fa fa-paypal" aria-hidden="true"></i>
-							Donate $90.00 
+							Donate $90.00
 						</button>
 					 	<!--<input type="image" src="http://fcbikecoop.org/images/btn_donate_LG.gif" name="submit" alt="Paypal">-->
 					 	<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
