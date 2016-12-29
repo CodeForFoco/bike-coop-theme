@@ -1,239 +1,238 @@
 //Home Page
-.home{
-	header{
-		padding: 0 !important;
-	}
+
+.home {
+  header {
+    padding: 0 !important;
+  }
 }
 
 // Page header
 #front-hero {
-	.marketing {
-		@include grid-row();
-		max-width: 55rem;
-	}
-	@include breakpoint(small) {
-		//background: url('../images/coop/cropped_header.jpg') bottom center;
-		background-size: cover;
-		background-position: bottom;
-		padding: rem-calc(65%) 0;
-		margin: 0 0 rem-calc(32);
-		height: auto;
-		position: relative;
-		text-align: left;
-	}
-	@include breakpoint(medium) {
-		//background: url('../images/coop/cropped_header.jpg') bottom center;
-		background-size: cover;
-		background-position: center;
-		//height: rem-calc(685);
-		margin: 0 0 rem-calc(72);
-	}
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  margin: 0 0 rem-calc(32);
+  padding: rem-calc(65%) 0;
+  position: relative;
+  text-align: left;
 
-	#watch {
-		@include breakpoint(small) {
-			 @include grid-column(7);
-			@include grid-column-position(-5);
-		}
-		@include breakpoint(medium) {
-			 @include grid-column(12);
-			@include grid-column-position(0);
-		}
+  .page-template-donation & {
+    background-image: url('../images/coop/cropped_header.jpg');
+  }
+  @include breakpoint(medium) {
+    background-position: center;
+    margin: 0 0 rem-calc(72);
 
-		section {
-			display: inline;
-		}
+    .page-template-donation & {
+      height: rem-calc(685);
+    }
+  }
 
-		a {
-			color: #B4C9D1;
-			cursor: pointer;
-			font-weight: 400;
-			margin-right: rem-calc(20);
-		}
+  #watch {
+    @include breakpoint(small) {
+       @include grid-column(7);
+      @include grid-column-position(-5);
+    }
+    @include breakpoint(medium) {
+       @include grid-column(12);
+      @include grid-column-position(0);
+    }
 
-		a:hover {
-			color: #fff;
-		}
+    section {
+      display: inline;
+    }
 
-		#stargazers {
-			:before {
-				content: "\f09b";
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-decoration: inherit;
-				color: #B4C9D1;
-				margin-right: rem-calc(8);
-			}
-		}
+    a {
+      color: #B4C9D1;
+      cursor: pointer;
+      font-weight: 400;
+      margin-right: rem-calc(20);
+    }
 
-		#twitter {
-			:before {
-				content: "\f099";
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-decoration: inherit;
-				color: #B4C9D1;
-				margin-right: rem-calc(8);
-			}
-		}
-	}
+    a:hover {
+      color: #fff;
+    }
 
-	.tagline {
-		@include breakpoint(small) {
-			 @include grid-column(8);
-		}
-		@include breakpoint(medium) {
-			 @include grid-column(5);
-			padding-top: 6rem;
-		}
-	}
+    #stargazers {
+      :before {
+        content: '\f09b';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: #B4C9D1;
+        margin-right: rem-calc(8);
+      }
+    }
 
-	h1 {
-		color: #fff;
-		font-weight: 500;
-		@include breakpoint(small) {
-			font-size: 2.2rem;
-		}
-		@include breakpoint(medium) {
-			font-size: 2.875rem;
-		}
-	}
+    #twitter {
+      :before {
+        content: '\f099';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: #B4C9D1;
+        margin-right: rem-calc(8);
+      }
+    }
+  }
 
-	h4 {
-		color: #fefefe;
-		font-weight: 300;
-		font-size: 1.3125rem;
-	}
+  .tagline {
+    // Text difficult to see without background color
+    background-color: hsla(0, 0%, 11%, 0.51);
+    padding: 1rem 1.5rem;
+    @include breakpoint(medium) {
+      margin-top: 6rem;
+    }
+  }
 
-	.download {
-		margin-top: rem-calc(20);
-	}
+  h1 {
+    color: #fff;
+    font-weight: 500;
+    @include breakpoint(small) {
+      font-size: 2.2rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 2.875rem;
+    }
+  }
+
+  h4 {
+    color: #fefefe;
+    font-weight: 300;
+    font-size: 1.3125rem;
+  }
+
+  .download {
+    margin-top: rem-calc(20);
+  }
 }
 
 // Intro
 .intro {
-	@include grid-row();
+  @include grid-row();
 
-	.fp-intro {
-		@include breakpoint(small) {
-			 @include grid-column(12);
-		}
-		@include breakpoint(medium) {
-			 @include grid-column(10);
-			@include grid-column-offset(1);
+  .fp-intro {
+    @include breakpoint(small) {
+       @include grid-column(12);
+    }
+    @include breakpoint(medium) {
+       @include grid-column(10);
+      @include grid-column-offset(1);
 
-			h2 {
-				font-weight: 300;
-				margin-bottom: 1.5rem;
-			}
+      h2 {
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+      }
 
-			h4 {
-				font-size: 1.125rem;
-				line-height: 1.6;
-				color: #777;
-				margin-bottom: 2rem;
-			}
-		}
-	}
+      h4 {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: #777;
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
 
 // Section divider
 .section-divider {
-	@include grid-row();
+  @include grid-row();
 
-	hr {
-		@include grid-column(12);
-		@extend .dotted;
-		box-sizing: border-box;
-	}
+  hr {
+    @include grid-column(12);
+    @extend .dotted;
+    box-sizing: border-box;
+  }
 }
 
 // Wheel links
 .wheel-backgrounds {
-	text {
-		fill: $white;
-		text-shadow: 0 2px $black;
-		font-size: 40px;
-		text-anchor: middle;
-		line-height: 125%;
-		font-family: Stencil;
-	}
+  text {
+    fill: $white;
+    text-shadow: 0 2px $black;
+    font-size: 40px;
+    text-anchor: middle;
+    line-height: 125%;
+    font-family: Stencil;
+  }
 }
 
 .wheel-bg {
-	position: relative;
+  position: relative;
 
-	&--bike-shop {
-		circle {
-			fill: $wheel-bg--bike-shop;
-		}
+  &--bike-shop {
+    circle {
+      fill: $wheel-bg--bike-shop;
+    }
 
-		#wheel-programs,
-		#wheel-volunteer {
-			display: none;
-		}
-	}
+    #wheel-programs,
+    #wheel-volunteer {
+      display: none;
+    }
+  }
 
-	&--volunteer {
-		circle {
-			fill: $wheel-bg--volunteer;
-		}
+  &--volunteer {
+    circle {
+      fill: $wheel-bg--volunteer;
+    }
 
-		#wheel-bike-shop,
-		#wheel-programs {
-			display: none;
-		}
-	}
+    #wheel-bike-shop,
+    #wheel-programs {
+      display: none;
+    }
+  }
 
-	&--programs {
-		circle {
-			fill: $wheel-bg--programs;
-		}
+  &--programs {
+    circle {
+      fill: $wheel-bg--programs;
+    }
 
-		#wheel-bike-shop,
-		#wheel-volunteer {
-			display: none;
-		}
-	}
+    #wheel-bike-shop,
+    #wheel-volunteer {
+      display: none;
+    }
+  }
 
 }
 
 // Program Links
 .program-link-bg {
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: relative;
-	font-family: Stencil;
-	font-size: 1.8rem;
-	padding: 0 8px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Stencil;
+  font-size: 1.8rem;
+  padding: 0 8px;
 
-	> a {
-		display: block;
-		position: relative;
+  > a {
+    display: block;
+    position: relative;
 
-		&:hover .home-program-link__text {
-			background-color: lighten($flat-black, 20%);
-		}
-	}
+    &:hover .home-program-link__text {
+      background-color: lighten($flat-black, 20%);
+    }
+  }
 
-	img {
-		border-radius: 4px;
-		width: 100%;
-	}
+  img {
+    border-radius: 4px;
+    width: 100%;
+  }
 
-	.home-program-link__text {
-		transition: 300ms;
-		text-shadow: 0 2px $flat-black;
-		background-color: #231f1f;
-		width: 100%;
-		padding: 8px 4px;
-		position: absolute;
-		line-height: 1;
-		display: block;
-		color: hsl(0, 0%, 100%);
-		bottom: 1rem;
-		text-align: center;
-	}
+  .home-program-link__text {
+    transition: 300ms;
+    text-shadow: 0 2px $flat-black;
+    background-color: #231f1f;
+    width: 100%;
+    padding: 8px 4px;
+    position: absolute;
+    line-height: 1;
+    display: block;
+    color: hsl(0, 0%, 100%);
+    bottom: 1rem;
+    text-align: center;
+  }
 }
