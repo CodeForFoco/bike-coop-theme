@@ -1,4 +1,13 @@
-.awesome-events-wrapper{
+.awesome-events-wrapper,.awesome-programs-wrapper{
+  .slick-list{
+    display:block; min-width: 100%;
+
+    .slick-track{
+      display:block; min-width: 100%;
+    }
+  }
+
+
   .card{
     padding: 0;
 

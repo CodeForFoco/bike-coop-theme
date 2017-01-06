@@ -15,4 +15,33 @@ jQuery(document).ready(function($){
         
         return false;
    });
+
+   $('.awesome-events,.awesome-programs').each(function(){
+      var _this = $(this);
+
+      _this.slick({
+          mobileFirst:  true,
+          centerMode:   true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows:       false,
+          responsive:   [
+              {
+                  breakpoint: 640,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              },
+              {
+                  breakpoint: 980,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                      centerMode: false
+                  }
+              },
+          ]
+      });
+   });
 });

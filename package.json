@@ -74,5 +74,8 @@
     "postinstall": "bower install && gulp build",
     "production": "gulp --production",
     "watch": "gulp"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
   }
 }
