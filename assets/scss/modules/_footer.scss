@@ -18,7 +18,8 @@
 }
 
 .footer {
-  &__heading {
+  &__heading,
+  .widget__heading {
     font-size: 1.6rem;
   }
 
