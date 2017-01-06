@@ -6947,6 +6947,17 @@ body#tinymce {
 [data-whatinput="mouse"] a:focus, button:focus [data-whatinput="touch"] a:focus, button:focus {
   outline: none; }
 
+.awesome-events-wrapper .card {
+  padding: 0; }
+  .awesome-events-wrapper .card .card-img-overlay {
+    padding: 0 !important; }
+    .awesome-events-wrapper .card .card-img-overlay .card-text {
+      position: static; }
+  .awesome-events-wrapper .card:hover .card-text {
+    background-color: #594f4f; }
+  .awesome-events-wrapper .card .inner {
+    padding-left: 0 !important; }
+
 .home header {
   padding: 0 !important; }
 
@@ -7133,7 +7144,7 @@ body#tinymce {
   .wheel-bg--programs #wheel-volunteer {
     display: none; }
 
-.program-link-bg {
+.program-link-bg, .fcbc-card, .card {
   background-position: center;
   -webkit-background-size: contain;
           background-size: contain;
@@ -7141,16 +7152,17 @@ body#tinymce {
   position: relative;
   font-family: Stencil;
   font-size: 1.8rem;
-  padding: 0 8px; }
-  .program-link-bg > a {
+  padding: 0 8px;
+  border-radius: 4px; }
+  .program-link-bg > a, .fcbc-card > a, .card > a {
     display: block;
     position: relative; }
-    .program-link-bg > a:hover .home-program-link__text {
+    .program-link-bg > a:hover .home-program-link__text, .fcbc-card > a:hover .home-program-link__text, .card > a:hover .home-program-link__text {
       background-color: #594f4f; }
-  .program-link-bg img {
+  .program-link-bg img, .fcbc-card img, .card img {
     border-radius: 4px;
     width: 100%; }
-  .program-link-bg .home-program-link__text {
+  .program-link-bg .home-program-link__text, .program-link-bg .card-text, .fcbc-card .home-program-link__text, .fcbc-card .card-text, .card .home-program-link__text, .card .card-text {
     -webkit-transition: 300ms;
     transition: 300ms;
     text-shadow: 0 2px #231f1f;

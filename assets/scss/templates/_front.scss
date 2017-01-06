@@ -199,7 +199,7 @@
 }
 
 // Program Links
-.program-link-bg {
+.program-link-bg, .fcbc-card, .card {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -207,6 +207,7 @@
   font-family: Stencil;
   font-size: 1.8rem;
   padding: 0 8px;
+  border-radius: 4px;
 
   > a {
     display: block;
@@ -222,7 +223,7 @@
     width: 100%;
   }
 
-  .home-program-link__text {
+  .home-program-link__text, .card-text {
     transition: 300ms;
     text-shadow: 0 2px $flat-black;
     background-color: #231f1f;
