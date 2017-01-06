@@ -6855,7 +6855,8 @@ table.hover tr:nth-of-type(even):hover {
       margin: 0;
       padding: 0; }
 
-.footer__heading {
+.footer__heading,
+.footer .widget__heading {
   font-size: 1.6rem; }
 
 .footer__sub-heading {
