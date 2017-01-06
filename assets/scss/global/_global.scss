@@ -1,0 +1,23 @@
+.awesome-events-wrapper{
+  .card{
+    padding: 0;
+
+    .card-img-overlay{
+      padding: 0 !important;
+
+      .card-text{
+        position: static;
+      }
+    }
+
+    &:hover{
+      .card-text{
+        background-color: lighten($flat-black, 20%);
+      }
+    }
+
+    .inner{
+      padding-left: 0 !important;
+    }
+  }
+}

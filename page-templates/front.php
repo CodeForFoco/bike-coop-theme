@@ -17,7 +17,7 @@ get_header(); ?>
 
 <?php do_action('foundationpress_before_content'); ?>
 <?php while (have_posts()) : the_post(); ?>
-<section class="intro" role="main">
+<section class="" role="main">
   <div class="fp-intro">
 
     <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -41,7 +41,7 @@ get_header(); ?>
             </a>
           </div>
         </div>
-        <div class="row">
+        <div class="">
           <h2>Program Links</h2>
           <div class="column medium-4 program-link-bg bg--earn-bike" title="Earn a bike by volunteering">
             <a href="programs/earn-a-bike">
