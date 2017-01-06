@@ -6951,30 +6951,23 @@ body#tinymce {
   padding: 0 !important; }
 
 #front-hero {
+  background-position: bottom;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: bottom;
-  padding: 3.4428rem 0;
-  margin: 0 0 1.69492rem;
   height: auto;
+  margin: 0 0 1.69492rem;
+  padding: 3.4428rem 0;
   position: relative;
   text-align: left; }
-  #front-hero .marketing {
-    max-width: 52.9661rem;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 55rem; }
-    #front-hero .marketing::before, #front-hero .marketing::after {
-      content: ' ';
-      display: table; }
-    #front-hero .marketing::after {
-      clear: both; }
+  .page-template-donation #front-hero {
+    background-image: url("../images/coop/cropped_header.jpg"); }
   @media screen and (min-width: 40em) {
     #front-hero {
-      -webkit-background-size: cover;
-              background-size: cover;
       background-position: center;
-      margin: 0 0 3.81356rem; } }
+      margin: 0 0 3.81356rem; }
+      .page-template-donation #front-hero {
+        height: 36.28178rem; } }
   #front-hero #watch {
     width: 58.33333%;
     float: left;
@@ -7013,7 +7006,7 @@ body#tinymce {
     #front-hero #watch a:hover {
       color: #fff; }
     #front-hero #watch #stargazers :before {
-      content: "\f09b";
+      content: '\f09b';
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -7021,7 +7014,7 @@ body#tinymce {
       color: #B4C9D1;
       margin-right: 0.42373rem; }
     #front-hero #watch #twitter :before {
-      content: "\f099";
+      content: '\f099';
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -7029,30 +7022,11 @@ body#tinymce {
       color: #B4C9D1;
       margin-right: 0.42373rem; }
   #front-hero .tagline {
-    width: 66.66667%;
-    float: left;
-    padding-left: 0.52966rem;
-    padding-right: 0.52966rem; }
+    background-color: rgba(28, 28, 28, 0.51);
+    padding: 1rem 1.5rem; }
     @media screen and (min-width: 40em) {
       #front-hero .tagline {
-        padding-left: 0.79449rem;
-        padding-right: 0.79449rem; } }
-    #front-hero .tagline:last-child:not(:first-child) {
-      float: right; }
-    @media screen and (min-width: 40em) {
-      #front-hero .tagline {
-        width: 41.66667%;
-        float: left;
-        padding-left: 0.52966rem;
-        padding-right: 0.52966rem;
-        padding-top: 6rem; } }
-  @media screen and (min-width: 40em) and (min-width: 40em) {
-    #front-hero .tagline {
-      padding-left: 0.79449rem;
-      padding-right: 0.79449rem; } }
-    @media screen and (min-width: 40em) {
-        #front-hero .tagline:last-child:not(:first-child) {
-          float: right; } }
+        margin-top: 6rem; } }
   #front-hero h1 {
     color: #fff;
     font-weight: 500;
