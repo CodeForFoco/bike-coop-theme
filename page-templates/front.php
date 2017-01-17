@@ -4,11 +4,8 @@ Template Name: Front
 */
 get_header(); ?>
 
-<header id="front-hero" role="banner">
-  <?php echo do_shortcode('[fcbc_slider location="home"]'); ?>
-</header>
-
 <?php do_action('foundationpress_before_content'); ?>
+<?php do_action( 'full_width_slider', $post ); ?>
 <?php while (have_posts()) : the_post(); ?>
 <section class="" role="main">
   <div class="fp-intro">
