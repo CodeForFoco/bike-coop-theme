@@ -1,6 +1,7 @@
 //Home Page
 
-.home {
+.home,
+.page-template-donation {
   header {
     padding: 0 !important;
   }
@@ -16,17 +17,9 @@
   padding: rem-calc(65%) 0;
   position: relative;
   text-align: left;
-
-  .page-template-donation & {
-    background-image: url('../images/coop/cropped_header.jpg');
-  }
   @include breakpoint(medium) {
     background-position: center;
     margin: 0 0 rem-calc(72);
-
-    .page-template-donation & {
-      height: rem-calc(685);
-    }
   }
 
   #watch {
