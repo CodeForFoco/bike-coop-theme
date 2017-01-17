@@ -192,7 +192,9 @@
 }
 
 // Program Links
-.program-link-bg, .fcbc-card, .card {
+.card,
+.fcbc-card,
+.program-link-bg {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -216,7 +218,8 @@
     width: 100%;
   }
 
-  .home-program-link__text, .card-text {
+  .card-text,
+  .home-program-link__text {
     transition: 300ms;
     text-shadow: 0 2px $flat-black;
     background-color: #231f1f;
