@@ -1,6 +1,7 @@
 //Home Page
 
-.home {
+.home,
+.page-template-donation {
   header {
     padding: 0 !important;
   }
@@ -11,22 +12,15 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 70vh;
   margin: 0 0 rem-calc(32);
   padding: rem-calc(65%) 0;
   position: relative;
   text-align: left;
-
-  .page-template-donation & {
-    background-image: url('../images/coop/cropped_header.jpg');
-  }
   @include breakpoint(medium) {
+    height: 65vh;
     background-position: center;
     margin: 0 0 rem-calc(72);
-
-    .page-template-donation & {
-      height: rem-calc(685);
-    }
   }
 
   #watch {
@@ -82,15 +76,16 @@
   .tagline {
     // Text difficult to see without background color
     background-color: hsla(0, 0%, 11%, 0.51);
-    padding: 1rem 1.5rem;
-    @include breakpoint(medium) {
-      margin-top: 6rem;
+    padding: 4vh 9.5vw;
+    @include breakpoint(small only) {
+      text-align: center;
     }
   }
 
   h1 {
     color: #fff;
     font-weight: 500;
+    margin-bottom: .3rem;
     @include breakpoint(small) {
       font-size: 2.2rem;
     }
@@ -99,10 +94,20 @@
     }
   }
 
-  h4 {
+  .subheader {
     color: #fefefe;
     font-weight: 300;
-    font-size: 1.3125rem;
+    font-size: 1rem;
+    @include breakpoint(medium) {
+      font-size: 1.3125rem;
+    }
+  }
+
+  .button {
+    @include breakpoint(small only) {
+      font-size: 1rem;
+      padding: .7rem;
+    }
   }
 
   .download {
@@ -199,7 +204,9 @@
 }
 
 // Program Links
-.program-link-bg, .fcbc-card, .card {
+.card,
+.fcbc-card,
+.program-link-bg {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -223,7 +230,8 @@
     width: 100%;
   }
 
-  .home-program-link__text, .card-text {
+  .card-text,
+  .home-program-link__text {
     transition: 300ms;
     text-shadow: 0 2px $flat-black;
     background-color: #231f1f;
