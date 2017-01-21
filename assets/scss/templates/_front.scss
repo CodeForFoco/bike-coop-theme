@@ -13,14 +13,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
-  margin: 0 0 rem-calc(32);
   padding: rem-calc(65%) 0;
   position: relative;
   text-align: left;
   @include breakpoint(medium) {
     height: 65vh;
     background-position: center;
-    margin: 0 0 rem-calc(72);
   }
 
   #watch {
@@ -173,8 +171,8 @@
       fill: $wheel-bg--bike-shop;
     }
 
-    #wheel-programs,
-    #wheel-volunteer {
+    .wheel-text--programs,
+    .wheel-text--volunteer {
       display: none;
     }
   }
@@ -184,8 +182,8 @@
       fill: $wheel-bg--volunteer;
     }
 
-    #wheel-bike-shop,
-    #wheel-programs {
+    .wheel-text--bike-shop,
+    .wheel-text--programs {
       display: none;
     }
   }
@@ -195,8 +193,8 @@
       fill: $wheel-bg--programs;
     }
 
-    #wheel-bike-shop,
-    #wheel-volunteer {
+    .wheel-text--bike-shop,
+    .wheel-text--volunteer {
       display: none;
     }
   }
