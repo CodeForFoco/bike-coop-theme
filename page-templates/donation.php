@@ -22,7 +22,7 @@ get_header(); ?>
 				<div class="one-time-donation">
 					<h4 class='title'>One Time Donations</h4>
 					<p>You can make a one monetary donation to the co-op securely through paypal by clicking ont he butotn below (A paypal account is NOT required).</p>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="5249669">
 						<!--<input type="image" src="http://fcbikecoop.org/images/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
@@ -36,7 +36,7 @@ get_header(); ?>
 
 					<h4 class='title'>Donate to our outreach</h4>
 					<p>$90 pays for one bike mechanic for a day to support our earn-a-bike and youth outreach programs</p>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 					 	<input type="hidden" name="cmd" value="_s-xclick">
 					 	<input type="hidden" name="hosted_button_id" value="1190629">
 					 	<button type="submit" role="button" class="download button sites-button" title="PayPal - The safer, easier way to pay online!">

@@ -6976,15 +6976,13 @@ body#tinymce {
   -webkit-background-size: cover;
           background-size: cover;
   height: 70vh;
-  margin: 0 0 1.69492rem;
   padding: 3.4428rem 0;
   position: relative;
   text-align: left; }
   @media screen and (min-width: 40em) {
     #front-hero {
-      height: 65vh;
-      background-position: center;
-      margin: 0 0 3.81356rem; } }
+      height: 55vh;
+      background-position: center; } }
   #front-hero #watch {
     width: 58.33333%;
     float: left;
@@ -7144,18 +7142,18 @@ body#tinymce {
   position: relative; }
   .wheel-bg--bike-shop circle {
     fill: #dc8432; }
-  .wheel-bg--bike-shop #wheel-programs,
-  .wheel-bg--bike-shop #wheel-volunteer {
+  .wheel-bg--bike-shop .wheel-text--programs,
+  .wheel-bg--bike-shop .wheel-text--volunteer {
     display: none; }
   .wheel-bg--volunteer circle {
     fill: #7b7f34; }
-  .wheel-bg--volunteer #wheel-bike-shop,
-  .wheel-bg--volunteer #wheel-programs {
+  .wheel-bg--volunteer .wheel-text--bike-shop,
+  .wheel-bg--volunteer .wheel-text--programs {
     display: none; }
   .wheel-bg--programs circle {
     fill: #a72a2a; }
-  .wheel-bg--programs #wheel-bike-shop,
-  .wheel-bg--programs #wheel-volunteer {
+  .wheel-bg--programs .wheel-text--bike-shop,
+  .wheel-bg--programs .wheel-text--volunteer {
     display: none; }
 
 .card,
