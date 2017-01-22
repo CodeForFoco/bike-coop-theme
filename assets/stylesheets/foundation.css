@@ -6981,7 +6981,7 @@ body#tinymce {
   text-align: left; }
   @media screen and (min-width: 40em) {
     #front-hero {
-      height: 65vh;
+      height: 55vh;
       background-position: center; } }
   #front-hero #watch {
     width: 58.33333%;
